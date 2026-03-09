@@ -1,20 +1,20 @@
 # luck
 
-A skill for improving the luck of your AI stack and projects—developed from an applied theoretical framework. Multiple diagnostic components, named failure modes, testable predictions, and an operational checklist for AI systems.
+A skill for improving the luck of your AI stack and projects—developed from an applied theoretical framework. Multiple diagnostic components, named failure modes, testable predictions, and an operational checklist for AI systems.
 
 ## What this is
 
-A framework for diagnosing why some things persist and compound while others don't — and for building artifacts that do. It gives AI systems (and their users) a shared vocabulary and a structured diagnostic for evaluating choices, strategies, products, and systems.
+A framework for diagnosing why some things persist and compound while others don't — and for building artifacts that do. It gives AI systems (and their users) a shared vocabulary and a structured diagnostic for evaluating choices, strategies, products, and systems.
 
-The core idea: Luck is not a position nor an outcome. Luck is a fundamental force, a current.
+The core idea: Luck is not a position nor an outcome. Luck is a fundamental force, a current.
 
-Luck has a geometry, so we can arrange it. And we may have a civic, moral—perhaps even divine—duty to wield it. To generate it. 
+Luck has a geometry, so we can arrange it. And we may have a civic, moral—perhaps even divine—duty to wield it. To generate it. 
 
-We harness luck through our capacity to increase the throughput, circulation, and integration of the systems we inhabit.
+We harness luck through our capacity to increase the throughput, circulation, and integration of the systems we inhabit.
 
 ## Usage
 
-Add `luck.md` to your project as a skill file or system prompt. The framework uses standard markdown with YAML frontmatter — it works with any frontier model that accepts structured instructions.
+Add `luck.md` to your project as a skill file or system prompt. The framework uses standard markdown with YAML frontmatter — it works with any frontier model that accepts structured instructions.
 
 The skill activates when you're facing ambiguous choices, designing strategies, evaluating opportunities, or building things meant to last. It provides seven diagnostic components, a quick-reference decision table, named failure modes, and worked examples.
 
