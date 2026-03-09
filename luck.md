@@ -6,7 +6,7 @@ metadata:
   version: '1.0'
 ---
 
-# The Mechanics of Luck
+# The Geometry of Luck
 
 ## Definitions
 
@@ -36,7 +36,7 @@ Complexity does not produce integration. Integration produces complexity. The ar
 
 -----
 
-## The Seven Components of Luck
+## The Seven Facets of Luck
 
 Assess these properties in order. The first four describe the conditions for an assembly to persist and grow. The last three describe the conditions for an ecology to ascend. A failure at any level is sufficient for an artifact or system to expire regardless of strength in the others.
 
