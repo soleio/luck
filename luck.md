@@ -6,7 +6,7 @@ metadata:
   version: '1.0'
 ---
 
-# An Applied Theory of Luck
+# The Mechanics of Luck
 
 ## Definitions
 
