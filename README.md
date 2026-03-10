@@ -18,7 +18,7 @@ A framework for diagnosing why some things persist and compound while others don
 
 ## Usage
 
-Add `luck.md` to your project as a skill file or system prompt. The framework uses standard markdown with YAML frontmatter — it works with any frontier model that accepts structured instructions.
+Add `SKILL.md` to your project as a skill file or system prompt. The framework uses standard markdown with YAML frontmatter — it works with any frontier model that accepts structured instructions.
 
 The skill activates when you're facing ambiguous choices, designing strategies, evaluating opportunities, or building things meant to last. It provides seven diagnostic components, a quick-reference decision table, named failure modes, and worked examples.
 
@@ -30,13 +30,12 @@ The skill activates when you're facing ambiguous choices, designing strategies, 
 - **Testable predictions** — six falsifiable claims that distinguish this from generic strategy advice
 - **Reflexive AI instructions** — guidance for applying the framework to any output an AI system constructs
 
-The framework is in [`luck.md`](luck.md).
+The framework is in [`SKILL.md`](SKILL.md).
 
 ## Repository structure
 
 ```
-luck.md              ← canonical skill file
-luck_*.md            ← working drafts (dated)
+SKILL.md             ← canonical skill file
 README.md            ← you are here
 ```
 
