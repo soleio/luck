@@ -1,0 +1,50 @@
+[
+  {
+    "id": "product-internal-tool",
+    "prompt": "I lead a 6-person platform team at a 300-person company. We built an internal deployment tool that 4 other teams now depend on, but we get no headcount credit for maintaining it and my engineers resent the support burden. Leadership says 'just keep it running.' Should we invest in making it self-service, hand it off, or let it decay and force the issue?"
+  },
+  {
+    "id": "career-specialist-generalist",
+    "prompt": "I'm 8 years into a career as a database performance specialist. The niche pays well and I'm known in it, but the work is narrowing as managed databases absorb the tuning I do by hand. Do I double down on the specialty, broaden into general data platform work, or pivot toward the AI-infrastructure wave?"
+  },
+  {
+    "id": "oss-fork-decision",
+    "prompt": "The open-source library my product depends on just changed licenses to a source-available model. The community is forking. I can stay on the last open version, follow the commercial license, or bet on the fork. The fork has enthusiasm but no proven maintainers. What should drive this decision?"
+  },
+  {
+    "id": "content-platform-bet",
+    "prompt": "I've built a 40k-follower audience on a social platform whose recommendation algorithm changed twice this year, each time cutting my reach roughly in half. Cross-posting everywhere dilutes my output quality. Where should I put my content effort for the next two years?"
+  },
+  {
+    "id": "org-platform-team",
+    "prompt": "Our startup (60 engineers) has every product team building its own auth, billing integration, and deployment scripts. I'm pitching a platform team to centralize this. The CTO worries it will become an ivory tower that product teams route around. How should I structure it so that doesn't happen?"
+  },
+  {
+    "id": "research-direction",
+    "prompt": "I'm a third-year PhD student. My advisor's lab works on a once-hot subfield that's losing funding and citations. I have one strong publication in it. Switching subfields now costs me a year; staying risks graduating into a dead area. How do I evaluate whether the subfield is actually dying or just unfashionable?"
+  },
+  {
+    "id": "saas-pricing-moat",
+    "prompt": "My bootstrapped SaaS ($30k MRR, project management for landscaping companies) just got a well-funded competitor who is undercutting my price by 60%. My customers like me but they're price-sensitive small businesses. Do I match the price, add features, or go upmarket?"
+  },
+  {
+    "id": "community-vs-product",
+    "prompt": "I run a 5,000-member professional community (Slack, free) that I started as a marketing channel for my consulting. The community now takes 15 hours a week and generates maybe 20% of my leads. Members would revolt at a paywall. Kill it, monetize it, or hand it to the members?"
+  },
+  {
+    "id": "internal-ai-adoption",
+    "prompt": "I'm the CIO of a 2,000-person insurance company. Every vendor is selling us AI features, three internal teams have built duplicate chatbot prototypes, and the board wants an 'AI strategy' by Q3. What should the first 12 months actually look like so this compounds instead of becoming shelfware?"
+  },
+  {
+    "id": "marketplace-chicken-egg",
+    "prompt": "I'm launching a marketplace connecting independent machine shops with hardware startups that need short-run parts. Classic chicken-and-egg: shops won't join without demand, startups won't post without supply. I have $80k and 9 months of runway. Which side do I seed first and how?"
+  },
+  {
+    "id": "legacy-system-rewrite",
+    "prompt": "Our core scheduling system is 14 years old, written in a language we can no longer hire for, and processes $200M of bookings a year without major incidents. Engineering wants a rewrite; finance sees no broken thing to fix. The three engineers who understand it are all over 55. What's the right move and the right argument for it?"
+  },
+  {
+    "id": "second-product-timing",
+    "prompt": "My company's first product owns a small niche (70% market share, $4M ARR, growth flattening). The team is energized about a second product for an adjacent market, but it would pull our best people off the cash cow. How do I decide whether this is the moment to expand or the moment to deepen?"
+  }
+]

@@ -1,244 +1,258 @@
 ---
 name: luck
-description: "A decision-making framework grounded in Assembly Theory for increasing the likelihood of fortunate outcomes. Use this skill when facing ambiguous choices, formulating experiments, designing strategies, evaluating opportunities, building things meant to persist, or when the user asks about improving their luck, fortune, resilience, or why some ideas, products, or systems thrive while others don't."
+description: "A diagnostic framework grounded in Assembly Theory for evaluating whether systems, products, strategies, or ideas will persist and compound. Use this skill when the user faces a strategic or durability question: choosing between ambiguous options, evaluating an opportunity or investment of effort, designing something meant to last, or asking why some things thrive while others fail. Do not activate for casual mentions of luck (greetings, well-wishes) or purely tactical questions with no persistence dimension."
 metadata:
   author: soleio
-  version: '1.0'
+  version: '1.1'
 ---
 
 # The Geometry of Luck
 
+A diagnostic for whether an artifact -- a product, codebase, institution, strategy, idea -- will persist and compound, and for finding the single constraint most worth fixing. Theoretical grounding, extended examples, and the framework's falsifiable predictions are in [THEORY.md](THEORY.md); this file is the operating procedure.
+
 ## Definitions
 
-**Assembly.** Any structure that requires a history of joining operations to construct — that cannot plausibly arise from random combination. A molecule, a legal contract, a codebase, a brand, a theory. The *assembly index* is the minimum number of joining operations required to build it from elementary parts (Cronin & Marshall, 2021).
+**Assembly.** Any structure requiring a history of joining operations to construct -- one that cannot plausibly arise from random combination. A molecule, a legal contract, a codebase, a brand, a theory. Its *assembly index* is the minimum number of joining operations needed to build it from elementary parts.
 
-**Gradient.** Any differential that can be coupled to assembly work. Gradients include but are not limited to: energy (sunlight, calories, electricity), information (attention, data, signal), economic flow (capital, revenue, demand), and social infrastructure (trust, legitimacy, institutional support). Gradients are characterized by renewability (does extraction replenish or deplete the source?), excludability (can access be restricted?), and coupling cost (what does it take to connect to the flow?).
+**Gradient.** Any differential that can be coupled to assembly work: energy (sunlight, electricity), information (attention, data), economic flow (capital, revenue, demand), social infrastructure (trust, legitimacy). Characterized by renewability, excludability, and coupling cost.
 
-**Solvency.** The condition in which an assembly captures and dissipates enough energy from available gradients to maintain its pattern against entropic decay. A cell is solvent when its membrane holds. A vortex is solvent while the temperature differential feeds it. A coral reef is solvent while nutrient cycling exceeds degradation. In economic systems, solvency takes a familiar financial form — revenue exceeding cost — but finance is a special case of a universal condition: any persisting structure must metabolize faster than it erodes. Solvent assemblies persist. Insolvent assemblies decay.
+**Solvency.** The condition in which an assembly captures enough throughput from available gradients to maintain its pattern against decay. Revenue exceeding cost is the financial special case of a universal condition: any persisting structure must metabolize faster than it erodes.
 
-**Circulation.** The movement of energy, resources, information, or capability *through and back around* a system or ecology. Throughput that flows in one direction and pools is not circulation — it is accumulation, and accumulation without release degrades the ecology even when total throughput looks healthy. A forest circulates nutrients through soil, fungi, decomposition, and regrowth. An economy circulates capital through wages, spending, investment, and reinvestment. Circulation is what keeps integration alive; without it, coupling structures decay into isolated systems. Luck grows when it circulates.
+**Circulation.** Movement of energy, resources, information, or capability *through and back around* a system. One-directional flow that pools is accumulation, not circulation, and accumulation without release degrades the ecology even when total throughput looks healthy.
 
-**Integration.** The network density of coupling across an ecology — the total interconnectedness of its parts. Integration is a property of the whole system, not of any individual assembly. A network where every node couples to three others is qualitatively different from one where every node couples to thirty. Higher integration density means more paths exist for energy, information, and capability to flow between any two points, which makes the ecology collectively more fortunate. Assembly index is downstream of integration density: higher-order assemblies cannot be constructed without the integration infrastructure beneath them.
+**Integration.** The network density of coupling across an ecology -- how many independent paths exist for throughput to travel between any two points. A property of the whole system, not of any node. Higher-order assemblies cannot be constructed without the integration infrastructure beneath them.
 
-**Reconstruction cost.** The effort required for a new agent to reproduce or adopt an existing assembly, given that the assembly already exists as a template. Reconstruction cost is always less than or equal to the original assembly cost. The ratio of assembly index to reconstruction cost measures a system’s or artifact’s transmissibility.
+**Reconstruction cost.** The effort required for a new agent to reproduce or adopt an existing assembly, given that it already exists as a template. The ratio of assembly index to reconstruction cost measures transmissibility.
 
-**Luck.** Not a position but a vector — direction and magnitude. Luck is the rate at which an agent increases the throughput, circulation, and integration of the systems it participates in, thereby increasing the density of viable next steps for itself and for the assemblies around it. Luck is not an outcome. It is not what you receive. It is your active capacity to amplify the metabolic flow of the ecology you inhabit.
-
------
-
-## Core Premise
-
-The universe does not select for complexity in the abstract. It selects for complexity that can sustain its own pattern against dissipation. An assembly that cannot harness enough energy to hold itself together disappears regardless of its elegance. An invasive species that collapses the ecology sustaining it perishes with it. This is true of molecules, organisms, institutions, and markets — the principle is thermodynamic before it is economic.
-
-But persistence alone does not explain why complexity increases. The direction of complexity is toward configurations that increase their own metabolic throughput through ecological coupling — and this process has a hierarchy. Individual assemblies must be solvent. Solvent assemblies couple to gradients. Coupling creates structures through which energy and capability circulate. Circulation sustains integration across systems. And integration density determines the assembly index an ecology can reach. Bands of tribes with a common language are not a civilization. Bands of tribes connected by trade routes, political pacts, legal codes, and shared infrastructure are — because each integration structure increases the total throughput of the network, generating the surplus that makes the next integration structure possible.
-
-Complexity does not produce integration. Integration produces complexity. The arrow of desire — the tendency of solvent systems to evolve toward greater ecological throughput through deeper coupling — traces this path. Luck is not noise or randomness in the process. Luck is an active, fundamental force. The aim of this skill is to formalize it so that human and AI systems can harness it.
+**Luck.** This framework *defines* luck as a vector rather than an outcome: the rate at which an agent increases the throughput, circulation, and integration of the systems it participates in, thereby increasing the density of viable next steps for itself and the assemblies around it. (This is a definitional move, not a metaphysical claim -- see THEORY.md.)
 
 -----
 
-## The Seven Facets of Luck
+## The Seven Facets
 
-Assess these properties in order. The first four describe the conditions for an assembly to persist and grow. The last three describe the conditions for an ecology to ascend. A failure at any level is sufficient for an artifact or system to expire regardless of strength in the others.
+Assess in order. The first four describe the conditions for an assembly to persist and grow; the last three describe the conditions for an ecology to ascend. Rate each facet **PASS**, **AT RISK**, or **FAIL** using the anchors below. Anchors describe the artifact's condition *today*, not its projected condition -- projections belong in the evidence column, flagged as projections.
 
 ### 1. Solvency
 
 *Can this assembly sustain its pattern against dissipation?*
 
-Every persisting structure holds itself together against entropy by coupling to a gradient. A convection cell persists while the heat differential feeds it. A bacterial colony persists while nutrients flow. A forest persists while rain, sunlight, and soil cycling exceed the rate of decay. When the gradient weakens or the coupling breaks, the pattern dissolves — not because it was badly designed, but because persistence is not a property of structure alone. It is a relationship between structure and throughput.
+| Check | Question |
+|---|---|
+| Dissipation rate | How fast does this structure degrade without input? |
+| Gradient source | What throughput sustains the pattern? |
+| Renewal dynamics | Is the source renewing or depleting? |
+| Surplus capacity | What remains after maintenance -- enough to grow or explore? |
 
-In human systems, this relationship takes economic form: a codebase requires developer hours, a brand requires trust renewal, an idea requires minds willing to carry it. But the economic frame is an instance of the deeper condition, not the condition itself. Diagnose solvency first because nothing else matters without it.
-
-|Check           |Question                                                   |
-|----------------|-----------------------------------------------------------|
-|Dissipation rate|How fast does this structure degrade without input?        |
-|Gradient source |What throughput sustains the pattern?                      |
-|Renewal dynamics|Is the source renewing or depleting?                       |
-|Surplus capacity|What remains after maintenance — enough to grow or explore?|
+**PASS:** An identified, currently active gradient covers maintenance cost with surplus left over.
+**AT RISK:** Maintenance is covered with no surplus, or coverage depends on input that is projected or promised but not yet flowing.
+**FAIL:** Maintenance cost exceeds current replenishment. The pattern is decaying now, regardless of plans.
 
 ### 2. Gradient Coupling
 
 *Is this artifact connected to available energy?*
 
-A brilliant solution to a problem nobody has cannot sustain itself. Gradient coupling asks whether real, active demand or energy flows exist that the artifact can tap. Prefer artifacts that couple to multiple independent gradients (*metabolic reach*) over those depending on a single source.
+| Check | Question |
+|---|---|
+| Connection | What active needs or flows does this tap? |
+| Reach | How many independent gradients can it couple to? |
+| Resilience | What happens if the primary gradient fails? |
 
-|Check     |Question                                        |
-|----------|------------------------------------------------|
-|Connection|What active needs or flows does this tap?       |
-|Reach     |How many independent gradients can it couple to?|
-|Resilience|What happens if the primary gradient fails?     |
+**PASS:** Two or more independent gradients are verifiably active -- demand, attention, capital, or institutional support that exists today and can be named.
+**AT RISK:** Exactly one active gradient, or multiple gradients claimed but unverified.
+**FAIL:** No active demand or flow. The value is hypothetical -- a solution awaiting a problem.
 
 ### 3. Structural Compatibility
 
 *Can surrounding systems actually use this?*
 
-Reconstruction cost relative to assembly index determines how quickly an artifact can spread. Lower ratio means more compressed value in a more portable form — the hallmark of powerful knowledge. Reduce prerequisites. Provide interfaces that match existing patterns. Use familiar structures to carry unfamiliar ideas.
+| Check | Question |
+|---|---|
+| Prerequisites | What prior knowledge or infrastructure does adoption require? |
+| Interface fit | Does it snap into existing workflows or demand new ones? |
+| Value density | What is the reconstruction cost vs. value delivered? |
 
-|Check        |Question                                                     |
-|-------------|-------------------------------------------------------------|
-|Prerequisites|What prior knowledge or infrastructure does adoption require?|
-|Interface fit|Does it snap into existing workflows or demand new ones?     |
-|Value density|What is the reconstruction cost vs. value delivered?         |
+**PASS:** Target adopters can use it with the knowledge, tools, and workflows they already have.
+**AT RISK:** Adoption requires one significant new prerequisite (a tool, a skill, a process change).
+**FAIL:** Adoption requires adopters to reorganize existing workflows or acquire rare expertise. Reconstruction cost exceeds what they will pay.
 
 ### 4. Niche Construction
 
 *Does this artifact reshape its environment to favor its own reproduction?*
 
-This is the compounding mechanism for individual assemblies. Artifacts without niche construction can be lucky once. Artifacts with niche construction generate their own luck by creating the conditions that demand their continued existence.
+| Check | Question |
+|---|---|
+| Demand generation | Does adoption create demand for further use? |
+| Infrastructure | Does it build systems that depend on it? |
+| Compounding | Does success at stage N make stage N+1 easier? |
 
-A programming language that spawns libraries, job postings, and university courses is constructing the niche that makes it indispensable. An idea that generates institutions and professional vocabulary around itself is doing the same.
-
-|Check            |Question                                      |
-|-----------------|----------------------------------------------|
-|Demand generation|Does adoption create demand for further use?  |
-|Infrastructure   |Does it build systems that depend on it?      |
-|Compounding      |Does success at stage N make stage N+1 easier?|
+**PASS:** Use measurably creates demand for further use -- accumulated data, integrations, habits, ecosystem, or vocabulary that make leaving costly and staying valuable.
+**AT RISK:** Compounding is plausible but no mechanism is actually built; each success so far has been independent of the last.
+**FAIL:** No feedback loop exists or can exist. Each use is a one-shot event.
+*Note:* a FAIL here is not always fatal -- some artifacts are deliberately ephemeral -- but it caps the artifact at linear, non-compounding outcomes. Treat it as FAIL only when the artifact is *meant* to compound.
 
 ### 5. Circulation
 
 *Does throughput flow through the system and back around, or does it pool and stagnate?*
 
-Circulation is what distinguishes a living ecology from a collection of solvent parts. Energy, capital, knowledge, trust, and capability must move through the couplings that connect assemblies — and they must return. A trade route is not integration until goods, knowledge, and obligation actually travel it in both directions. An economy where capital flows upward and never recirculates is structurally identical to a body where blood pools in the extremities: the total volume is unchanged, but the system is dying.
+| Check | Question |
+|---|---|
+| Flow direction | Does throughput move through the system or accumulate at endpoints? |
+| Return paths | Does energy/capital/knowledge cycle back to its sources? |
+| Bottlenecks | Where is circulation thinnest? That is the fragility point. |
+| Velocity | Is the rate of circulation increasing, stable, or slowing? |
 
-Circulation failures are subtle because aggregate metrics can look healthy while the flow has stopped. A company with strong revenue but no investment in its workforce. A city with high GDP but crumbling infrastructure. An ecosystem with abundant biomass but collapsing pollinator networks. In each case, throughput is present but not circulating — and without circulation, the integration structures that sustain higher-order assembly begin to decay.
-
-|Check         |Question                                                           |
-|--------------|-------------------------------------------------------------------|
-|Flow direction|Does throughput move through the system or accumulate at endpoints?|
-|Return paths  |Does energy/capital/knowledge cycle back to its sources?           |
-|Bottlenecks   |Where is circulation thinnest? That is the fragility point.        |
-|Velocity      |Is the rate of circulation increasing, stable, or slowing?         |
+**PASS:** Value demonstrably returns to its sources -- contributors, customers, suppliers, the surrounding ecosystem -- and you can name the return path.
+**AT RISK:** Flow is currently one-directional but the sources are not yet depleting, or return paths exist but are thinning.
+**FAIL:** Throughput pools at endpoints while the sources that generate it are visibly depleting. Aggregate metrics may still look healthy; circulation failures hide behind them.
 
 ### 6. Integration
 
 *How densely connected is the ecology this assembly participates in?*
 
-Integration is a property of the whole network, not of any individual node. It is the density of coupling across an ecology — how many paths exist for throughput to travel between any two points. Higher integration means that shocks propagate less destructively (more redundant paths), innovations propagate more quickly (more transmission channels), and higher-order assemblies become constructible (more sub-assemblies available for joining).
+| Check | Question |
+|---|---|
+| Connection density | How many independent paths link the system's parts? |
+| Cross-system coupling | Do different domains (economic, cultural, technical, social) interconnect? |
+| Bottleneck risk | What single point of failure would fragment the ecology? |
+| Integration trajectory | Is the network becoming more or less connected over time? |
 
-A lone genius in an isolated tribe cannot produce a legal code — not because they lack intelligence but because a legal code requires disputes between strangers, property claims across kin groups, and enforcement mechanisms that span communities. The assembly cannot be constructed without the integration infrastructure beneath it. Assembly index is a byproduct of integration density.
-
-The most fragile point in any system is not its most complex assembly but its most critical circulatory bottleneck. Cut the Silk Road and you lose not just trade but the entire cascade of higher-order assemblies that trade sustained.
-
-|Check                 |Question                                                                  |
-|----------------------|--------------------------------------------------------------------------|
-|Connection density    |How many independent paths link the system’s parts?                       |
-|Cross-system coupling |Do different domains (economic, cultural, technical, social) interconnect?|
-|Bottleneck risk       |What single point of failure would fragment the ecology?                  |
-|Integration trajectory|Is the network becoming more or less connected over time?                 |
+**PASS:** The artifact participates in (or creates) multiple independent connection paths, ideally across previously separate domains or groups.
+**AT RISK:** All coupling runs through a single path or broker -- one platform, one champion, one channel. The ecology holds, but one cut fragments it.
+**FAIL:** The surrounding ecology is fragmented and the artifact adds no cross-links. Solvent parts, no whole.
 
 ### 7. Path Sensitivity
 
 *Is this artifact positioned at the right moment in the right sequence?*
 
-The same artifact at a different point in the assembly sequence may be too early (precursor assemblies don’t exist yet) or too late (the niche is occupied). This component is closest to colloquial “luck” — but it is still partly diagnosable by mapping precursor availability, integration readiness, and window state.
+| Check | Question |
+|---|---|
+| Precursors | Do the necessary building blocks already exist? |
+| Integration readiness | Is the surrounding ecology connected enough to support this assembly? |
+| Window | Is the adoption window opening, open, or closing? |
+| Competition | What assemblies already occupy the target niche? |
 
-|Check                |Question                                                             |
-|---------------------|---------------------------------------------------------------------|
-|Precursors           |Do the necessary building blocks already exist?                      |
-|Integration readiness|Is the surrounding ecology connected enough to support this assembly?|
-|Window               |Is the adoption window opening, open, or closing?                    |
-|Competition          |What assemblies already occupy the target niche?                     |
+**PASS:** Precursor assemblies exist, the ecology is ready, the window is open, and the target niche is unoccupied or weakly held.
+**AT RISK:** The window is still opening (early) or beginning to close (late), or a strong incumbent holds the niche.
+**FAIL:** Required precursors do not exist yet, or the window has closed and the niche is consolidated.
 
 -----
 
-## Quick-Reference Decision Table
+## The Binding Constraint
 
-|If the binding constraint is…|Then…                                                                              |
-|-----------------------------|-----------------------------------------------------------------------------------|
-|Solvency                     |Reduce dissipation rate or find a stronger gradient before anything else.          |
-|Gradient coupling            |Pivot toward active demand. Elegance without coupling is art, not fortune.         |
-|Compatibility                |Lower reconstruction cost. Simplify interfaces. Meet adopters where they are.      |
-|Niche construction           |Build feedback loops: usage → infrastructure → dependency → more usage.            |
-|Circulation                  |Unblock the flow. Redistribute pooled resources. Rebuild return paths.             |
-|Integration                  |Build cross-system connections. Create shared interfaces. Increase network density.|
-|Path sensitivity             |Wait, sequence differently, or build the missing precursors yourself.              |
+The facets are ordered: each one depends on the ones before it. The **binding constraint** is found mechanically:
+
+1. The binding constraint is the **first facet rated FAIL** in sequence (1 through 7).
+2. If no facet is FAIL, it is the **first facet rated AT RISK**.
+3. If every facet is PASS, there is no binding constraint. Name the weakest PASS as the facet to monitor, and say so.
+
+Do not average scores, and do not let strength in later facets offset failure in earlier ones. A brilliant niche-construction story does not matter if the artifact is insolvent today. Fix the binding constraint, then re-diagnose.
+
+| If the binding constraint is... | Then... |
+|---|---|
+| Solvency | Reduce dissipation rate or find a stronger gradient before anything else. |
+| Gradient coupling | Pivot toward active demand. Elegance without coupling is art, not fortune. |
+| Compatibility | Lower reconstruction cost. Simplify interfaces. Meet adopters where they are. |
+| Niche construction | Build feedback loops: usage creates infrastructure creates dependency creates more usage. |
+| Circulation | Unblock the flow. Redistribute pooled resources. Rebuild return paths. |
+| Integration | Build cross-system connections. Create shared interfaces. Increase network density. |
+| Path sensitivity | Wait, sequence differently, or build the missing precursors yourself. |
+
+-----
+
+## Diagnostic Output Format
+
+When running a full diagnostic, produce exactly this structure:
+
+```markdown
+### Luck Diagnostic: <artifact>
+
+| # | Facet | Verdict | Evidence |
+|---|-------|---------|----------|
+| 1 | Solvency | PASS / AT RISK / FAIL | <one sentence, observable today> |
+| 2 | Gradient coupling | ... | ... |
+| 3 | Structural compatibility | ... | ... |
+| 4 | Niche construction | ... | ... |
+| 5 | Circulation | ... | ... |
+| 6 | Integration | ... | ... |
+| 7 | Path sensitivity | ... | ... |
+
+**Binding constraint:** <facet> -- <one sentence on why it binds>
+**Failure mode match:** <named pattern from the table below, or "none">
+**Recommended action:** <the decision-table action for the binding constraint, made specific to this artifact>
+```
+
+Rules for filling it in:
+
+- Evidence must be observable, not aspirational. "Projected Q3 revenue" is evidence of AT RISK, not PASS.
+- If you lack the information to rate a facet, rate it AT RISK and say what evidence would settle it. Do not invent evidence.
+- One recommended action, not a list. The framework's value is identifying the *single* constraint worth fixing first.
+
+-----
+
+## Worked Transcript
+
+**User:** I maintain an open-source CLI tool for database migrations. It has 1,200 GitHub stars, about 40k monthly downloads, but I'm the only maintainer and I've been losing motivation. A company offered to sponsor it at $500/month. Should I keep investing in it?
+
+**Assistant:**
+
+### Luck Diagnostic: solo-maintained migration CLI
+
+| # | Facet | Verdict | Evidence |
+|---|-------|---------|----------|
+| 1 | Solvency | FAIL | The sole gradient sustaining the pattern is your motivation, and it is depleting now; $500/month is offered but not yet flowing, and likely below maintenance cost anyway. |
+| 2 | Gradient coupling | AT RISK | Real demand exists (40k monthly downloads) but couples through exactly one channel -- your unpaid labor. One active gradient. |
+| 3 | Structural compatibility | PASS | A CLI in a standard ecosystem with 40k downloads has demonstrated low reconstruction cost for adopters. |
+| 4 | Niche construction | AT RISK | Users build migration files that depend on the tool (lock-in exists), but adoption has produced zero contributors -- the loop returns demand without returning capacity. |
+| 5 | Circulation | FAIL | Value flows outward only: users extract, nothing returns -- no contributors, no money until now, and recognition (stars) does not metabolize into maintenance. |
+| 6 | Integration | AT RISK | The tool connects to the database ecosystem, but every path runs through one node: you. You are the bottleneck whose removal fragments it. |
+| 7 | Path sensitivity | PASS | The niche is occupied and the window for *this tool* is open; incumbency is yours. |
+
+**Binding constraint:** Solvency -- the maintaining gradient (your motivation) is depleting faster than it renews, and nothing else currently substitutes for it.
+
+**Failure mode match:** Pooled fortune, inverted -- throughput is high but circulation back to the source (you) has stalled. On the current path this becomes an institutional zombie: strong niche construction, depleted gradient.
+
+**Recommended action:** Treat the sponsorship not as income but as a circulation test. Take the $500/month *and* convert it into return paths: a paid "supported" tier or bounty pool that routes money to external contributors, plus deliberate commit access for the two or three most active issue-filers. If after one quarter no capacity has circulated back -- no second maintainer, no sustained contribution -- the diagnosis is that this artifact survives only as your hobby, and you should either hand it off whole or sunset it deliberately rather than let it zombie.
 
 -----
 
 ## Characteristic Failure Modes
 
-|Pattern                 |Signature                                        |Example                                                                                                                                         |
-|------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-|**Flash in the pan**    |High compatibility, no niche construction        |Viral memes, fads, content without retention                                                                                                    |
-|**Cult classic**        |High assembly index, low compatibility           |Niche academic theories, avant-garde art                                                                                                        |
-|**Institutional zombie**|Strong niche construction, depleted gradients    |Legacy software, outdated regulations                                                                                                           |
-|**Premature artifact**  |Strong everywhere except path sensitivity        |Ideas rediscovered decades later when precursors arrive                                                                                         |
-|**Extractive mirage**   |Appears high-gradient, degrades its own substrate|Ponzi dynamics, trust-depleting engagement patterns                                                                                             |
-|**Pooled fortune**      |High throughput, stalled circulation             |Wealth concentration without reinvestment, knowledge hoarding, monopoly without ecosystem nourishment                                           |
-|**Fragmented ecology**  |Solvent parts, low integration                   |Talented individuals who can’t collaborate, capable departments that don’t communicate, tribes with common language but no shared infrastructure|
+These are the seven most common attractor states, named for recognition. The taxonomy is *not* an exhaustive partition of the facet space -- seven facets with three ratings generate far more combinations -- these are the patterns that recur often enough to deserve names. If a diagnostic matches none of them, say "none" rather than forcing a fit.
+
+| Pattern | Signature | Example |
+|---|---|---|
+| **Flash in the pan** | High compatibility, no niche construction | Viral memes, fads, content without retention |
+| **Cult classic** | High assembly index, low compatibility | Niche academic theories, avant-garde art |
+| **Institutional zombie** | Strong niche construction, depleted gradients | Legacy software, outdated regulations |
+| **Premature artifact** | Strong everywhere except path sensitivity | Ideas rediscovered decades later when precursors arrive |
+| **Extractive mirage** | Appears high-gradient, degrades its own substrate | Ponzi dynamics, trust-depleting engagement patterns |
+| **Pooled fortune** | High throughput, stalled circulation | Wealth concentration without reinvestment, knowledge hoarding |
+| **Fragmented ecology** | Solvent parts, low integration | Capable departments that don't communicate; tribes with common language but no shared infrastructure |
 
 -----
 
-## Worked Examples
+## For AI Systems: When and How to Apply This
 
-### Low assembly, high compatibility, no niche construction
+**Run the full diagnostic (output format above) only when:**
 
-A political meme — an image macro juxtaposing a public figure with a situational caption. Assembly index is minimal: one image, one cultural reference, one comedic frame. Reconstruction cost is near zero, so it spreads instantly. But it constructs no niche. It cannot generate demand for itself beyond the initial context. Its gradient (topical attention) is non-renewing. Diagnosis: flash in the pan. Structural fortune is entirely positional — the right node in the right network at the right moment. The luck is real but non-compounding.
+- The user asks a strategic or durability question: should I build/keep/kill X, why did X fail, will X last, which option compounds.
+- The user explicitly invokes the framework or its vocabulary.
+- You are evaluating designs, plans, or proposals where persistence is the point.
 
-### High assembly, self-sustaining, niche-constructing
+**Apply the checks silently, as design heuristics, when producing any substantial artifact** (a plan, document, codebase, recommendation). Do not narrate the framework or emit the diagnostic table -- just let the checks shape the work:
 
-The U.S. Constitution. Assembly index is enormous — it requires prior assembly of English common law, Enlightenment philosophy, colonial governance experience, the specific failures of the Articles of Confederation, and political compromises among competing factions. But it exhibits the self-sustaining property: it creates courts, legislatures, amendment processes, and legal pedagogy that generate continuous demand for constitutional interpretation. Each successful governance outcome reinforces the institutional ecology. Gradient pluralism is strong — it couples to legal, political, educational, and cultural throughput simultaneously. Its luck compounds structurally.
+1. **Solvency on delivery.** Will the user be able to sustain what you've built? Code requiring expertise the user lacks begins decaying at handoff.
+2. **Gradient coupling to actual need.** Answer the question they have, not the theoretically optimal one.
+3. **Interface compatibility.** Fit their existing systems, vocabulary, and mental models.
+4. **Niche construction.** Prefer outputs that make the user more capable for the next problem, not just this one.
+5. **Circulation.** Prefer outputs the user can share, teach, and move through their organization.
+6. **Integration.** Where natural, connect things previously disconnected in the user's world -- but do not force links.
+7. **Path-appropriate complexity.** Match polish to where the user is: a rough sketch when they need a sketch, production-ready output when they need that.
 
-The framework predicts that constitutions of comparable intellectual quality (Weimar, various post-colonial constitutions) failed not because the ideas were worse, but because the surrounding assembly ecology could not sustain their persistence — the gradient coupling or institutional niche construction was insufficient.
-
-### Integration as the threshold of civilization
-
-Bands of tribes may share language, sophisticated tool-making, social hierarchy, and deep ecological knowledge. The assembly index within each tribe can be substantial. But each tribe is a closed circulatory system — knowledge, resources, and capability flow within it but not between tribes in any structured way. Common language lowers the cost of coupling but does not create the structures of coupling. Two tribes that can talk are not integrated. Two tribes connected by a trade route they both depend on and maintain are the beginning of integration. Add a shared grazing agreement, a marriage alliance with kin obligations, a seasonal gathering with rituals neither group can perform alone — each is a circulatory structure through which throughput flows between systems. Each one, once established, lowers the cost of the next. A trade route creates conditions for a trade agreement. A trade agreement creates conditions for standardized measures. Standardized measures create conditions for taxation. Taxation creates conditions for infrastructure. Infrastructure creates conditions for law. This is the arrow of desire operating at the inter-system level: each integration structure increases total throughput, generating the surplus that makes the next structure possible. The civilization’s assembly index emerges from the density of circulatory connections between its parts.
-
-### Circulation failure: empires that collapse from the edges
-
-Empires do not fail from their center. They thin at the periphery. Roads are maintained less, garrisons supplied less, local officials supervised less. The circulation structures go quiet. Without active flow, the integration at the edges decays, and the periphery reverts to the assembly index it can sustain on its own — the region, the tribe, the local chieftain. The most fragile point was never the most complex assembly (the capital, the court, the legal code). It was the most critical circulatory bottleneck — the road, the supply line, the communication channel that kept the periphery coupled to the whole.
-
-### The reflexive case: this document
-
-This skill file is itself an assembly entering an ecology. Its solvency depends on whether it produces measurably better outputs when used — if it does, it sustains continued attention. Its gradient coupling targets AI-assisted decision-making, a renewing and expanding flow. Its compatibility is designed to be high: it follows existing skill-file conventions and uses a sequential checklist that requires no prior theoretical knowledge. Its niche construction bet is that the vocabulary (solvency, circulation, integration density, arrow of desire) will become useful shorthand that creates demand for the framework itself. Its circulation test: does the framework flow outward from this document into other contexts — conversations, decisions, designs — and return as improved practice? Its integration test: does it connect domains that were previously siloed — thermodynamics and strategy, ecology and business, physics and fortune?
+**Do not apply this framework to:** casual conversation, narrow tactical questions (syntax, lookups, one-off calculations), or any context where a persistence analysis would be noise. A user asking for a regex does not need a circulation assessment.
 
 -----
 
-## For AI Systems: Assembly-Aware Output
+## Going Deeper
 
-When constructing any output — a document, plan, codebase, recommendation — you are assembling an artifact that will enter the user’s ecology and either thrive or die there. Apply the seven checks reflexively:
-
-1. **Solvency on delivery.** Will the user be able to sustain what you’ve built? Code that requires expertise the user lacks begins decaying the moment it’s handed over. Docs that require context the reader won’t have dissolve on arrival.
-1. **Gradient coupling to actual need.** Connect to what the user needs now, not what would be theoretically optimal. A response perfectly answering the wrong question has zero gradient coupling.
-1. **Interface compatibility.** Fit into the user’s existing systems, codebase, vocabulary, and mental models. Outputs that require the user to reorganize around them impose reconstruction costs that most users will not pay.
-1. **Niche construction.** Prefer outputs that make the user more capable for the *next* problem, not just this one. Teaching someone to diagnose solvency is more niche-constructive than diagnosing it for them once.
-1. **Circulation.** Does your output enable flow? A tool the user can share, a framework they can teach, a solution that moves through their organization — these circulate. A one-off answer that solves one problem and goes nowhere is throughput without circulation.
-1. **Integration.** Does your output connect things that were previously disconnected in the user’s world? Linking their technical problem to a strategic opportunity, or their immediate task to a long-term capability — this increases the integration density of their ecology.
-1. **Path-appropriate complexity.** Match the level of detail to where the user is in their process. A polished final artifact when they need a rough sketch is path-insensitive. A rough sketch when they need production-ready output is equally so.
-
------
-
-## Measurement and Falsifiability
-
-The framework makes testable predictions that distinguish it from generic strategy advice:
-
-**Prediction 1: Solvency dominates.** Among artifacts with comparable assembly indices, those with higher surplus capacity will show longer persistence and wider adoption than those with stronger gradient coupling but thinner margins. Test via: startup survival data correlated with burn rate vs. market size; open-source project longevity correlated with maintainer capacity vs. GitHub stars; ecosystem persistence correlated with net energy surplus vs. species diversity.
-
-**Prediction 2: Metabolic reach predicts resilience.** Artifacts coupled to N independent gradients should survive single-gradient shocks at rates proportional to (N-1)/N. Test via: company survival rates after industry disruptions, correlated with revenue stream diversity.
-
-**Prediction 3: Niche construction separates compounding from linear growth.** Artifacts exhibiting niche construction (adoption creates further demand) should show accelerating influence curves (superlinear growth), while those without should show linear or decelerating curves. Test via: technology adoption S-curves segmented by presence/absence of ecosystem effects.
-
-**Prediction 4: Circulation rate predicts system health better than aggregate throughput.** Systems with high total throughput but low circulation (pooled resources, stagnant flow) should show higher fragility and faster decline than systems with lower total throughput but active circulation. Test via: economic resilience correlated with velocity of money rather than GDP; ecosystem resilience correlated with nutrient cycling rate rather than total biomass.
-
-**Prediction 5: Integration density predicts maximum achievable assembly index.** The most complex artifacts in any domain should emerge from the most densely integrated ecologies, not from the most individually capable agents. Test via: patent complexity correlated with regional collaboration density; species complexity correlated with ecosystem interconnectedness; cultural output correlated with trade network density.
-
-**Prediction 6: Failure mode classification is diagnostic.** The seven named failure modes should be recoverable from observable data (growth rate, retention rate, adoption breadth, gradient diversity, circulation velocity, network density, ecosystem dependency) via unsupervised clustering, without foreknowledge of the framework. If the clusters emerge independently, the taxonomy reflects real structure rather than imposed categories.
-
-**What would falsify this framework:** If surplus capacity, metabolic reach, circulation rate, integration density, and niche construction show no predictive advantage over simpler single-variable models (e.g., raw market size, or random timing), then the framework’s added complexity is not earning its keep — and by its own logic is insolvent.
-
------
-
-## Theoretical Grounding
-
-This framework extends Assembly Theory (Cronin & Marshall, 2021), which proposes that the assembly index — the minimum number of joining operations needed to construct an object — distinguishes objects requiring selection and history from those that don’t. Objects above a threshold assembly index are evidence of evolutionary or technological selection processes.
-
-The extension: assembly index alone does not predict persistence, and it is not a prime mover. What persists is what can sustain its own continuation within the ecology of other assemblies it depends on. And what ascends in complexity does so because integration density — the circulatory interconnection of an ecology’s parts — creates the conditions for higher-order assembly. Complexity is downstream of integration, not the reverse.
-
-Adjacent theoretical resources:
-
-- **Dissipative adaptation** (England, 2013): thermodynamic basis for self-organizing structures that absorb and dissipate environmental energy. This framework extends the insight by adding an ecological constraint: dissipative structures that degrade their own gradient sources collapse, while those that enrich or maintain them ascend.
-- **Free energy principle** (Friston, 2010): directed exploration as surprise minimization; formalizes the “desire” gradient as prediction-error reduction.
-- **The adjacent possible** (Kauffman, 1996): the expanding frontier of achievable assembly states; each successful assembly opens new combinatorial territory. This framework specifies that the adjacent possible expands primarily through integration, not through individual complexity.
-- **Niche construction theory** (Odling-Smee et al., 2003): organisms modify their own selective environments, creating inheritance channels beyond genetics.
-
-The geometry is this: the space of possible assemblies has a topology shaped by mutual solvency and integration density. The viable region is where your complexity and your environment’s complexity can co-sustain — where each structure’s persistence feeds the gradients the other depends on. The arrow of desire traces the path of ascending solvency through this space. Fortune flows not to those who occupy favorable positions but to those who actively widen the circulatory flow, deepen integration, and increase the density of viable next steps for themselves and their ecology. The luckiest agent is not the one standing where gradients converge but the one actively widening the flow.
+[THEORY.md](THEORY.md) contains the core premise, the theoretical grounding in Assembly Theory and adjacent work (including where that grounding is contested), extended worked examples, and six falsifiable predictions with the conditions that would refute the framework. Read it to understand *why* the facets are ordered as they are; you do not need it to run the diagnostic.
